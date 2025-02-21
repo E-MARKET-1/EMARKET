@@ -12,6 +12,82 @@
         nav a { color: white; text-decoration: none; margin: 10px; }
         section { padding: 20px; }
         footer { background: #4CAF50; color: white; padding: 10px; margin-top: 20px; }
+
+        /* Estilos para el producto */
+        .producto-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .producto-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .producto-caracteristicas h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .producto-caracteristicas ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .producto-caracteristicas ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .producto-precio {
+            font-size: 20px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .precio-destacado {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .producto-enlace .boton-comprar {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .producto-enlace .boton-comprar:hover {
+            background-color: #2980b9;
+        }
+
+        .nota-precio {
+            font-size: 14px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .nota-precio a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .nota-precio a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -31,7 +107,40 @@
     </section>
     <section id="productos">
         <h2>Nuestros Productos</h2>
-        <p>Ofrecemos productos digitales de calidad, revisa nuestras ofertas.</p>
+        <div class="producto-container">
+            <!-- Imagen del producto -->
+            <div class="producto-imagen">
+                <img src="https://i.postimg.cc/7PmkJWTN/200-recetas.png" alt="200 Recetas para Diabéticos" />
+            </div>
+
+            <!-- Características del producto -->
+            <div class="producto-caracteristicas">
+                <h3>200 Recetas para Diabéticos</h3>
+                <ul>
+                    <li>✅ 200 recetas saludables y deliciosas</li>
+                    <li>✅ Información nutricional detallada</li>
+                    <li>✅ Ingredientes fáciles de encontrar</li>
+                    <li>✅ Formato digital (PDF y ePub)</li>
+                    <li>✅ Acceso inmediato tras la compra</li>
+                </ul>
+            </div>
+
+            <!-- Precio del producto -->
+            <div class="producto-precio">
+                <p>Precio: <span class="precio-destacado">$29.99</span></p>
+                <p class="nota-precio">
+                    *Más cargos aplicables según su país. 
+                    <a href="https://go.hotmart.com/G98027693Q" target="_blank">Ver detalles</a>
+                </p>
+            </div>
+
+            <!-- Enlace de compra con código de afiliado -->
+            <div class="producto-enlace">
+                <a href="https://go.hotmart.com/G98027693Q" target="_blank" class="boton-comprar">
+                    ¡Descargar ahora!
+                </a>
+            </div>
+        </div>
     </section>
     <section id="sobre">
         <h2>Sobre Nosotros</h2>
